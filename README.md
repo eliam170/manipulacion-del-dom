@@ -1,4 +1,4 @@
-# PROYECTO BASE: [Manipulación del DOM] - Software Factory SENA
+# PROYECTO BASE: Manipulación del DOM - Software Factory SENA
 
 **Metodología:** *"Del Requerimiento al Producto"*
 
@@ -207,9 +207,9 @@ En la industria, el software que no está publicado no existe. Esto vincula el r
 
 ## DIRECCIÓN DEL PROYECTO
 
-- **Instructor:** [Tu Nombre Aquí]  
+- **Instructor:** [jhon becerra]  
 - **Institución:** Servicio Nacional de Aprendizaje (SENA)  
-- **Centro:** [Nombre de tu Centro de Formación]  
+- **Centro:** [cimi]  
 - **Programa:** Análisis y Desarrollo de Software  
 
 ---
