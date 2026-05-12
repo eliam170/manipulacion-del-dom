@@ -56,7 +56,7 @@ let totalMessages = 0;
  * @param {string} value - El valor a validar
  * @returns {boolean} - true si es válido, false si no lo es
  */
-function isValidInput(value) {
+ function isValidInput(value) {
     // TODO: Implementar validación
     // Pista: usa trim() para eliminar espacios al inicio y final
     // Retorna true si después de trim() el string tiene longitud > 0
