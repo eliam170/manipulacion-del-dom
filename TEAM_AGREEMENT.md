@@ -4,8 +4,7 @@ Este documento establece las reglas de convivencia, comunicación y estándares 
 
 ## 1. Miembros del Equipo y Roles
 | Nombre | Rol | Usuario de GitHub |
-| :--- | :--- | :--- |
-<<<<<<< Updated upstream
+| saray puerto | desarrollador | @saray-cod |
 | Jhon Poveda | Líder (Arquitecto) | `@jhonpoved01` |
 | Eliseo Amaya Guerrero| Desarrollador | `@eliam170` |
 
