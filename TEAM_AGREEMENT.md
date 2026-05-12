@@ -6,7 +6,7 @@ Este documento establece las reglas de convivencia, comunicación y estándares 
 | Nombre | Rol | Usuario de GitHub |
 | :--- | :--- | :--- |
 <<<<<<< Updated upstream
-| [Nombre del Aprendiz 1] | Líder (Arquitecto) | `@usuario1` |
+| Jhon Poveda | Líder (Arquitecto) | `@jhonpoved01` |
 | Eliseo Amaya Guerrero| Desarrollador | `@eliam170` |
 
 >>>>>>> Stashed changes
