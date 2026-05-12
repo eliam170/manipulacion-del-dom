@@ -220,43 +220,42 @@ function createMessageElement(userName, message) {
 // 4. MANEJO DE EVENTOS
 // ============================================
 
-/**
- * Maneja el evento de envío del formulario
- * @param {Event} event - Evento del formulario
- */
-function handleFormSubmit(event) {
-    // TODO: Implementar el manejador del evento submit
-    
-    // PASO 1: Prevenir el comportamiento por defecto del formulario
-    // Pista: event.preventDefault()
-    
-    // PASO 2: Validar el formulario
-    // Si no es válido, detener la ejecución (return)
-    
-    // PASO 3: Obtener los valores de los campos
-    
-    // PASO 4: Crear el nuevo elemento de mensaje
-    // Llamar a createMessageElement con los valores obtenidos
-    
-    // PASO 5: Limpiar el formulario
-    // Pista: messageForm.reset()
-    
-    // PASO 6: Limpiar los errores
-    
-    // PASO 7: Opcional - Enfocar el primer campo para facilitar agregar otro mensaje
-    // Pista: userNameInput.focus()
-}
+// Importamos las funciones
+import { handleFormSubmit, handleInputChange } from './manejo_even.js';
 
-/**
- * Limpia los errores cuando el usuario empieza a escribir
- */
-function handleInputChange() {
-    // TODO: Implementar limpieza de errores al escribir
-    // Esta función se ejecuta cuando el usuario escribe en un campo
-    // Debe limpiar el error de ese campo específico
-}
+// Seleccionamos los elementos usando tus IDs de HTML
+const messageForm = document.getElementById('messageForm');
+const userName = document.getElementById('userName');
+const userMessage = document.getElementById('userMessage');
+const userNameError = document.getElementById('userNameError');
+const userMessageError = document.getElementById('userMessageError');
+const emptyState = document.getElementById('emptyState');
 
+// Agrupamos los componentes para enviarlos de forma ordenada
+const components = {
+    form: messageForm,
+    nameInput: userName,
+    msgInput: userMessage,
+    nameError: userNameError,
+    msgError: userMessageError,
+    emptyState: emptyState
+};
 
+// --- EVENTOS ---
+
+// Evento de envío del formulario
+messageForm.addEventListener('submit', (e) => {
+    handleFormSubmit(e, components);
+});
+
+// Eventos para limpiar errores mientras se escribe
+userName.addEventListener('input', (e) => {
+    handleInputChange(e, userNameError);
+});
+
+userMessage.addEventListener('input', (e) => {
+    handleInputChange(e, userMessageError);
+});
 // ============================================
 // 5. REGISTRO DE EVENTOS
 // ============================================
