@@ -277,24 +277,36 @@ userMessage.addEventListener('input', (e) => {
 // ============================================
 
 /**
- * PREGUNTAS DE REFLEXIÓN:
- * 
- * 1. ¿Qué elemento del DOM estás seleccionando?
- *    R: 
- * 
- * 2. ¿Qué evento provoca el cambio en la página?
- *    R: 
- * 
- * 3. ¿Qué nuevo elemento se crea?
- *    R: 
- * 
- * 4. ¿Dónde se inserta ese elemento dentro del DOM?
- *    R: 
- * 
- * 5. ¿Qué ocurre en la página cada vez que repites la acción?
- *    R: 
- */
+ 1. ¿Qué elemento del DOM estás seleccionando?
+R: Se están seleccionando varios elementos clave:
 
+El formulario principal mediante su ID: messageForm.
+
+Los campos de entrada de datos (inputs): userName y userMessage.
+
+Los contenedores de errores visuales: userNameError y userMessageError.
+
+El estado vacío de la lista: emptyState.
+
+2. ¿Qué evento provoca el cambio en la página?
+R: El evento principal es el submit (envío) del formulario. Adicionalmente, se utiliza el evento input en los cuadros de texto para limpiar los mensajes de error en tiempo real mientras el usuario escribe.
+
+3. ¿Qué nuevo elemento se crea?
+R: Se crea un elemento de mensaje (normalmente un div o un componente visual de tarjeta) que contiene el nombre del usuario y el texto ingresado. Técnicamente, esto se delega a la función createMessageElement que procesa los datos capturados.
+
+4. ¿Dónde se inserta ese elemento dentro del DOM?
+R: El nuevo elemento se inserta dinámicamente dentro del contenedor con el ID messagesContainer. Este es el área de la página destinada a mostrar la lista de mensajes publicados.
+
+5. ¿Qué ocurre en la página cada vez que repites la acción?
+R: Ocurren varias acciones en cadena:
+
+Se valida que los campos tengan contenido (si no, saltan las alertas).
+
+Se genera y aparece un nuevo mensaje visual al final de la lista.
+
+El mensaje de "Aún no hay mensajes" (emptyState) desaparece la primera vez que se agrega contenido.
+
+El formulario se limpia automáticamente y el cursor regresa al primer campo para facilitar una nueva entrada.*/
 
 // ============================================
 // 7. INICIALIZACIÓN (OPCIONAL)
